@@ -1,6 +1,18 @@
 # OpenSSH Session Key Recovery
 Project containing several tools/ scripts to recover the OpenSSH session keys used to encrypt/ decrypt SSH traffic. More information can be found in [this blogpost](https://blog.fox-it.com/2020/11/11/decrypting-openssh-sessions-for-fun-and-profit/).
 
+## Added by xtk
+
+ssh_watch_dump_get-keys.py - Implement SSH key extraction from monitored SSH processes/session
+Don't forget set:
+
+```
+# The target command line we are hunting for
+TARGET_CMD = "root@127.0.0.1"
+# Where to save the dumps
+DUMP_DIR = "/tmp/dumps"
+```
+
 # Volatility 3 Usage
 
 ## Without changing the volatility3 repository
